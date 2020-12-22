@@ -608,7 +608,7 @@ static void _copyVector2Output(vector< vector< Point2f > > &vec, OutputArrayOfAr
  * @brief rotate the initial corner to get to the right position
  */
 static void correctCornerPosition( vector< Point2f >& _candidate, int rotate){
-    std::rotate(_candidate.begin(), _candidate.begin() + 4 - rotate, _candidate.end());
+    std::rotate(_candidate.begin(), _candidate.begin() + rotate, _candidate.end());
 }
 
 /**
